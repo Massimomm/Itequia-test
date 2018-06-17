@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Ejercicio: 1 & 2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <meta charset=utf-8 />
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicios-1</title>
+
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/CustomStyleEjercicios-1.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Average|Courgette' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#name').val('');
+
+            // Acks :)
+            $('div').hide().fadeIn('slow');
+
+            $('#btnsend').on('click', function (event) {
+
+                var value = $('#name').val();
+
+                if (value !== undefined && value !== '') {
+                    alert("You Typed: " + value);
+                }
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+<h2><strong class="text-danger">Ejercicio: 1 & 2 </strong></h2>
+<div class="container div-panel">
+    <div class="row">
+
+        <div class="col-md-4 grayBox">
+            <div class="customDiv">Box 1</div>
+        </div>
+        <div class="col-md-4 orangeBox">
+            <div class="customDiv">
+                <label class="control-label" for="name">Insert your name</label>
+                <input type="text" id="name" name="name" class="form-control input-sm" data-error="value mandatory" placeholder="name">
+                <button type="button" id="btnsend" class="btn btn-default btn-custom" onclick="">
+                    <span class="glyphicon glyphicon-lamp"></span> Send
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4 greenyellowBox">
+            <div class="customDiv">Box 3</div>
+        </div>
+
+    </div>
+</div>
+

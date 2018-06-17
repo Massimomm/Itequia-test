@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Model.BookAuthor>
+
+@{
+    ViewBag.Title = "Ejercicio: 5b All Books and Authors";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><strong class="text-danger">@ViewBag.Title</strong></h2>
+
+<div>
+    @Html.Partial("_PartialBook", Model)
+</div>
+
+<span>@Html.ActionLink("Have a look at Ejercicio 5a: for a simple books's list", "books", "Book")</span>

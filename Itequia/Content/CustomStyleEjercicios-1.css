@@ -1,0 +1,52 @@
+﻿div {
+    font: 400 20px/0.5 'Courgette', Helvetica, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0px;
+}
+
+
+.customDiv {
+   
+    padding: 30px;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font: 400 14px/1.5 'Average', Times, serif;
+}
+
+table {
+    font: 400 45px/0.5 'Courgette', Helvetica, sans-serif;
+}
+
+.grayBox {
+    background-color: lightgray;
+    border: 2px solid darkgray;
+}
+
+.orangeBox {
+    background-color: orange;
+    font-style: italic;
+    border: 2px solid darkgray;
+}
+
+.greenyellowBox {
+    background-color: greenyellow;
+    border: 2px solid darkgray;
+}
+
+
+.btn-custom {
+    background-color: gray;
+    color: white;
+}
+
+.div-panel {
+    margin: 10%;
+}
+

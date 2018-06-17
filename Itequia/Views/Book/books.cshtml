@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Model.Book>
+
+@{
+    ViewBag.Title = "Ejercicio: 5a books list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><strong class="text-danger">@ViewBag.Title</strong></h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayName("First Published")
+        </th>
+        <th>
+            @Html.DisplayName("Authors Summary")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstPublished)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorsSummary)
+        </td>
+    </tr>
+}
+
+</table>

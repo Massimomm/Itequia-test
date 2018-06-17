@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "EX 7 - AngularJS: Sum two Input Values";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+</head>
+
+<h3></h3>
+<h2><strong class="text-danger">@ViewBag.Title</strong></h2>
+<script src="../Scripts/angular.min.js"></script>
+<div ng-app>
+    <input ng-model="fa" type="number">
+    <input ng-model="fb" type="number">
+    <h4>Result sum is : {{ fa + fb }}</h4>
+</div>
+
